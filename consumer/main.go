@@ -13,7 +13,7 @@ func main() {
 	topic := "first_topic"
 	msgCount := 0
 
-	worker, err := connectKafkaBroker([]string{"localhost:9092"})
+	worker, err := connectKafkaBroker([]string{"kafka:9094"})
 	if err != nil {
 		fmt.Println(err.Error())
 		os.Exit(1)
